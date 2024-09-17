@@ -1,0 +1,238 @@
+/* General styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* Header styles */
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: rgb(21, 52, 72);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.header-logo img {
+  height: 50px;
+}
+
+.header-list {
+  flex-grow: 1;
+}
+
+.header-list-nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.header-list-nav li {
+  padding: 0 15px;
+}
+
+.header-list-nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  transition: color 0.3s ease, font-weight 0.3s ease, text-decoration 0.3s ease;
+}
+
+.header-list-nav a:hover {
+  font-weight: bold;
+  text-decoration: underline;
+  color: aqua;
+}
+
+/* Hero section styles */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background-color: rgb(60, 91, 111);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 20px;
+}
+
+/* Home content styles */
+.home-content {
+  max-width: 800px;
+}
+
+.home-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.home-content p {
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 15px 20px;
+  cursor: pointer;
+  border: none;
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+}
+
+.button:hover {
+  background: aqua;
+}
+
+/* Hero-about section styles */
+.hero-about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px; /* Adjust padding to ensure content fits well */
+  background-color: rgb(148, 137, 121);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-weight: solid;
+}
+
+.about-content p {
+  font-size: 1.25rem; /* Slightly larger font size */
+  line-height: 1.6; /* Better readability */
+  text-align: center; /* Centered text */
+  padding: 20px 30px; /* Generous padding for a spacious feel */
+  margin: 20px auto; /* Centered with margin on top and bottom */
+  max-width: 750px; /* Prevents text from stretching too wide */
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(240, 240, 240, 0.9)); /* Subtle gradient background */
+  border-radius: 12px; /* More rounded corners */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow effect */
+  color: #333; /* Darker text color for contrast */
+  font-weight: 400; /* Regular font weight for modern look */
+  letter-spacing: 0.5px; /* Slight letter spacing for readability */
+  border: 1px solid #ddd; /* Light border for definition */
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.about-content p:hover {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(240, 240, 240, 0.8)); /* Slightly darker gradient background */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
+  transform: scale(1.02); /* Slight scale-up effect */
+  border-color: #ccc; /* Darker border color */
+}
+.hero-experience{
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  padding: 50px;
+}
+/* Styling the Experience Section */
+/* Experience section styles */
+/* Experience section styles */
+/* Experience section styles */
+#experience {
+   background-color: rgb(223, 208, 184) /* Light gray background for the section */
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.experience-content {
+  background: rgb(255, 255, 255); /* White background */
+  padding: 30px;
+  border-radius: 15px; /* Slightly rounded corners */
+  max-width: 800px;
+  text-align: center; /* Center-align text */
+  border: 2px solid #ddd; /* Light border for a touch of definition */
+  position: relative; /* For positioning pseudo-elements */
+}
+
+.experience-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 15px;
+  background: rgb(21, 52, 72); /* Accent color at the top */
+  border-radius: 15px 15px 0 0;
+}
+
+.experience-content img {
+  width: 120px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.experience-content h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.experience-content h3 {
+  font-size: 1.5rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.experience-content h4 {
+  font-size: 1.2rem;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.experience-content h6 {
+  font-size: 1rem;
+  color: #999;
+  margin-bottom: 20px;
+}
+
+.experience-content p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+
+
+
+#projects{
+  background-color: rgb(148, 137, 121);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.projects-content{
+  background-color: whitesmoke;
+  cursor: pointer;
+  border:black;
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 35px;
+}
+.projects-content img {
+  width: 150px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+}
+.projects-content:hover{
+  box-shadow: #777;
+}
